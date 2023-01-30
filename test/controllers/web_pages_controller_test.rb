@@ -35,4 +35,15 @@ class WebPagesControllerTest < ActionDispatch::IntegrationTest
     get web_pages_help_url
     assert_response :success
   end
+
+  test "should get blog" do
+    get web_pages_blog_url 
+    assert_response :success
+  end 
+
+  test "should get library" do 
+    get web_pages_library_url 
+    assert_response :success
+  end
+
 end

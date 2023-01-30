@@ -19,4 +19,11 @@ class WebPagesController < ApplicationController
 
   def help
   end
+
+  def blog 
+  end 
+
+  def library
+  end
+
 end

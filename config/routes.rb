@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get 'web_pages/register'
   get 'web_pages/login'
   get 'web_pages/help'
+  get 'web_pages/blog'
+  get 'web_pages/library'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
