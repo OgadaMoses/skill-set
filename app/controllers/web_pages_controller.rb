@@ -26,4 +26,7 @@ class WebPagesController < ApplicationController
   def library
   end
 
+  def alumni
+  end
+  
 end

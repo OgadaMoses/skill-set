@@ -46,4 +46,9 @@ class WebPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get alumni" do
+    get web_pages_alumni_url 
+    assert_response :success
+  end
+
 end
