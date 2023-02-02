@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get 'web_pages/blog'
   get 'web_pages/library'
   get 'web_pages/alumni'
+  get 'web_pages/events'
+  
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

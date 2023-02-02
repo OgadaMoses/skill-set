@@ -28,5 +28,8 @@ class WebPagesController < ApplicationController
 
   def alumni
   end
+
+  def events
+  end  
   
 end

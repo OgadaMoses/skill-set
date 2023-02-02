@@ -61,4 +61,10 @@ class WebPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "Alumni | SKillset"
   end
 
+  test "should get events" do 
+    get web_pages_events_url 
+    assert_response :success
+    assert_select "title", "Events | Skillset"
+  end
+
 end
