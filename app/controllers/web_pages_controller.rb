@@ -31,5 +31,8 @@ class WebPagesController < ApplicationController
 
   def events
   end  
+
+  def notice 
+  end
   
 end

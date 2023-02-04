@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'web_pages/library'
   get 'web_pages/alumni'
   get 'web_pages/events'
+  get 'web_pages/notice'
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
