@@ -70,6 +70,14 @@ class WebPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get notice" do 
     get web_pages_notice_url 
     assert_response :success 
+    assert_select "title", "Notice | Skillset"
+  end
+
+ 
+  test "should get units" do
+   get web_pages_units_url 
+   assert_response :success 
+   assert_select "title", "Units | Skillset"
   end
 
 end

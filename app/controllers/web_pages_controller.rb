@@ -35,4 +35,7 @@ class WebPagesController < ApplicationController
   def notice 
   end
   
+  def units 
+  end
+  
 end
