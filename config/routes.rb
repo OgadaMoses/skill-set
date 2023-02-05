@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'web_pages/home'
+  root "web_pages#home"
+  get "web_pages/home"
   get 'web_pages/about'
   get 'web_pages/courses'
   get 'web_pages/contact'
@@ -13,8 +14,4 @@ Rails.application.routes.draw do
   get 'web_pages/notice'
   get 'web_pages/units'
   
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
 end
