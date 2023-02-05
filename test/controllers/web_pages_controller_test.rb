@@ -28,37 +28,37 @@ class WebPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get register" do
     get web_pages_register_url
     assert_response :success
-    assert_select "title", "Register | SKillset"
+    assert_select "title", "Register | Skillset"
   end
 
   test "should get login" do
     get web_pages_login_url
     assert_response :success
-    assert_select "title", "Login | SKillset"
+    assert_select "title", "Login | Skillset"
   end
 
   test "should get help" do
     get web_pages_help_url
     assert_response :success
-    assert_select "title", "Help | SKillset"
+    assert_select "title", "Help | Skillset"
   end
 
   test "should get blog" do
     get web_pages_blog_url 
     assert_response :success
-    assert_select "title", "Blog | SKillset"
+    assert_select "title", "Blog | Skillset"
   end 
 
   test "should get library" do 
     get web_pages_library_url 
     assert_response :success
-    assert_select "title", "Library | SKillset"
+    assert_select "title", "Library | Skillset"
   end
 
   test "should get alumni" do
     get web_pages_alumni_url 
     assert_response :success
-    assert_select "title", "Alumni | SKillset"
+    assert_select "title", "Alumni | Skillset"
   end
 
   test "should get events" do 
