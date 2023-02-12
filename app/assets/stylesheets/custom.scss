@@ -6,6 +6,11 @@ body {
     padding-top: 60px;
 }
 
+/* navigation bar colors */
+.navbar-inverse {
+    background-color: #d1abf7;
+}
+
 section {
     overflow: auto;
 }
@@ -25,18 +30,21 @@ textarea {
     font-weight: bold;
     text-align: center;
     margin-left: 150px;
+    color: #fff;
 }
 
 /* typograpgy */
 h1,h2,h3,h4,h4,h6 {
     line-height: 1;
 }
+
+
 h1 {
     font-size: 2em;
     letter-spacing: -2px;
     margin-bottom: 10px;
     text-align: center;
-    color: #a832a0;
+    color: #17191c;
     word-spacing: 10px;
 }
 h2 {
@@ -45,7 +53,7 @@ h2 {
     margin-bottom: 30px;
     text-align: center;
     font-weight: normal;
-    color: #777;
+    color: #fff;
 }
 p {
     font-size: 1.1em;
