@@ -2,7 +2,7 @@ require "test_helper"
 
 class AlumnisControllerTest < ActionDispatch::IntegrationTest
   test "should get new" do
-    get alumnis_new_url
+    get newalumni_path
     assert_response :success
   end
 end
