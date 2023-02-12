@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'alumnis/new'
+  get 'students/new'
+  get 'staffs/new'
   root "web_pages#home"
   get  "/about",    to:   "web_pages#about"
   get  "/admin",    to:   "web_pages#admin"
