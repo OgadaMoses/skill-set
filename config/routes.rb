@@ -1,17 +1,16 @@
 Rails.application.routes.draw do
   root "web_pages#home"
-  get "web_pages/home"
-  get 'web_pages/about'
-  get 'web_pages/courses'
-  get 'web_pages/contact'
-  get 'web_pages/register'
-  get 'web_pages/login'
-  get 'web_pages/help'
-  get 'web_pages/blog'
-  get 'web_pages/library'
-  get 'web_pages/alumni'
-  get 'web_pages/events'
-  get 'web_pages/notice'
-  get 'web_pages/units'
+  get  "/about",    to:   "web_pages#about"
+  get  "/admin",    to:   "web_pages#admin"
+  get  "/contact",  to:   "web_pages#contact"
+  get  "/register", to:   "web_pages#register"
+  get  "/staff",    to:   "web_pages#staff"
+  get  "/dept",     to:   "web_pages#dept"
+  get  "/blog",     to:   "web_pages#blog"
+  get  "student",   to:   "web_pages#student"
+  get  "/alumni",   to:   "web_pages#alumni"
+  get  "/events",   to:   "web_pages#events"
+  get  "/notice",   to:   "web_pages#notice"
+  get  "/units",    to:   "web_pages#units"
   
 end

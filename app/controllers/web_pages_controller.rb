@@ -5,7 +5,7 @@ class WebPagesController < ApplicationController
   def about
   end
 
-  def courses
+  def admin
   end
 
   def contact
@@ -14,16 +14,16 @@ class WebPagesController < ApplicationController
   def register
   end
 
-  def login
+  def staff
   end
 
-  def help
+  def dept
   end
 
   def blog 
   end 
 
-  def library
+  def student
   end
 
   def alumni

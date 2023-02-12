@@ -2,83 +2,81 @@ require "test_helper"
 
 class WebPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
-    get web_pages_home_url
+    get root_path
     assert_response :success
     assert_select "title", "Home | Skillset"
   end
 
   test "should get about" do
-    get web_pages_about_url
+    get about_path
     assert_response :success
     assert_select "title", "About | Skillset"
   end
 
-  test "should get courses" do
-    get web_pages_courses_url
+  test "should get admin" do
+    get admin_path
     assert_response :success
-    assert_select "title", "Courses | Skillset"
+    assert_select "title", "Admin | Skillset"
   end
 
   test "should get contact" do
-    get web_pages_contact_url
+    get contact_path
     assert_response :success
     assert_select "title", "Contact | Skillset"
   end
 
   test "should get register" do
-    get web_pages_register_url
+    get register_path
     assert_response :success
     assert_select "title", "Register | Skillset"
   end
 
-  test "should get login" do
-    get web_pages_login_url
+  test "should get staff" do
+    get staff_path
     assert_response :success
-    assert_select "title", "Login | Skillset"
+    assert_select "title", "Staff | Skillset"
   end
 
-  test "should get help" do
-    get web_pages_help_url
+  test "should get dept" do
+    get dept_path
     assert_response :success
-    assert_select "title", "Help | Skillset"
+    assert_select "title", "Dept | Skillset"
   end
 
   test "should get blog" do
-    get web_pages_blog_url 
+    get blog_path
     assert_response :success
     assert_select "title", "Blog | Skillset"
   end 
 
-  test "should get library" do 
-    get web_pages_library_url 
+  test "should get student" do 
+    get student_path 
     assert_response :success
-    assert_select "title", "Library | Skillset"
+    assert_select "title", "Student | Skillset"
   end
 
   test "should get alumni" do
-    get web_pages_alumni_url 
+    get alumni_path
     assert_response :success
     assert_select "title", "Alumni | Skillset"
   end
 
   test "should get events" do 
-    get web_pages_events_url 
+    get events_path 
     assert_response :success
     assert_select "title", "Events | Skillset"
   end
 
   test "should get notice" do 
-    get web_pages_notice_url 
+    get notice_path 
     assert_response :success 
     assert_select "title", "Notice | Skillset"
   end
 
  
   test "should get units" do
-   get web_pages_units_url 
+   get units_path
    assert_response :success 
    assert_select "title", "Units | Skillset"
-  end
-
-  
+  end  
 end
