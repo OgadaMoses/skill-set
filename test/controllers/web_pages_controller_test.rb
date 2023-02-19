@@ -80,6 +80,4 @@ class WebPagesControllerTest < ActionDispatch::IntegrationTest
    assert_select "title", "Units | Skillset"
   end  
 
-
-  
 end
