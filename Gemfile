@@ -31,7 +31,7 @@ gem 'rails-controller-testing'
 # Bootstrap gem
 gem "bootstrap-sass", "3.4.1"
 
-
+gem "bcrypt", "3.1.18"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
