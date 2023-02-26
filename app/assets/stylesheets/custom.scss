@@ -75,7 +75,7 @@ p {
     text-decoration: none;
 }
 
-/* footer */
+/* footer 
 
 footer {
     margin-top: 125px;
@@ -98,10 +98,11 @@ footer {
  }
  footer ul li {
     float: left;
-    margin-left: 15px;
+    margin-left: 55px;
  }
+   */
 
-
+/* homepage styles */
  .hero {
     
     background-size: cover;
@@ -110,21 +111,26 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('https://lh3.googleusercontent.com/ogw/AAEL6siKaozO8Ntqs3Vv8Q0-9rTRsMgIkABRgY86i4xg5g=s32-c-mo');
   }
   
   .hero-content {
     text-align: center;
     color: white;
+    font-family: 'Times New Roman', cursive;
   }
   
   .hero-content h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
+    color: #fff;
+    font-family: 'Times New Roman', cursive;
   }
   
   .hero-content p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    font-family: 'Times New Roman', cursive;
   }
   
   .btn {
@@ -141,4 +147,66 @@ footer {
   .btn-primary:hover {
     background-color: #0062cc;
     border-color: #005cbf;
+  }
+
+  .foo {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin: 2rem 0 0;
+  }
+
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .fhero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .flogo img {
+    width: 100px;
+  }
+  
+  .flinks {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .column:last-child {
+    margin-right: 0;
+  }
+  
+  h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
   }
