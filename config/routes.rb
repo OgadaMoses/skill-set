@@ -17,5 +17,11 @@ Rails.application.routes.draw do
   get  "/units",    to:   "web_pages#units"
   get  "newstaff",  to:   "staffs#new"
   get "newstudent", to:   "students#new"
-  get "newalumni",  to:   "alumnis#new"
+  get "newalumnis",  to:   "alumnis#new"
+
+  resources :alumnis
+  resources :students 
+  resources :staffs 
+  resources :units 
+  resources :events
 end
