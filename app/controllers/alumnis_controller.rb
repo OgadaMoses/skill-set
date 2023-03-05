@@ -5,5 +5,6 @@ class AlumnisController < ApplicationController
   end
   
   def new
+    @alumni = Alumni.new
   end
 end

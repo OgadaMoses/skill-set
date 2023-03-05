@@ -39,8 +39,8 @@ h1,h2,h3,h4,h4,h6 {
 }
 
 
-h1 {
-    font-size: 2em;
+h6 {
+    font-size: 1em;
     letter-spacing: -2px;
     margin-bottom: 10px;
     text-align: center;
@@ -120,7 +120,7 @@ footer {
     font-family: 'Times New Roman', cursive;
   }
   
-  .hero-content h1 {
+  .hero-content h6 {
     font-size: 4rem;
     margin-bottom: 1rem;
     color: #fff;
@@ -152,22 +152,29 @@ footer {
   
 
   footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: #333;
     color: #fff;
-    padding: 50px 0;
+    padding: 5px;
+    margin-top: 50px;
+    box-sizing: border-box; /* include padding in height */
+    font-size: 10px;
   }
   
   .fhero {
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
   }
   
   .flogo img {
-    width: 100px;
+    width: 40px;
   }
   
   .flinks {
@@ -177,7 +184,7 @@ footer {
   
   .column {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 10px;
   }
   
   .column:last-child {
@@ -185,8 +192,8 @@ footer {
   }
   
   h4 {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 10px;
+    margin-bottom: 5px;
   }
   
   ul {
@@ -196,15 +203,14 @@ footer {
   }
   
   li {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
   
   a {
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 10px;
   }
-
   /* sidebar styles */
 
   aside {
@@ -240,4 +246,28 @@ footer {
   .gravatar_edit {
     margin-top: 15px;
   }
+
+  /* alumni signup styles */
+    /* mixins variables */
+    $gray-medium-light: #eaeaea;
+
+    @mixin box-sizing {
+      -moz-box-sizing:    border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing:         border-box;
+    }
+
+    /* forms */
+
+    input, textarea, select, .uneditable-input {
+      border: 1px solid #bbb;
+      width: 100%;
+      margin-bottom: 2px;
+      @include box_sizing;
+    }
+    
+    input {
+      height: auto !important;
+    }
+
   
